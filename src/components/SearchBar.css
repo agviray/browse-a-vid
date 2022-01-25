@@ -1,0 +1,27 @@
+.searchbar {
+  padding: 0.75rem;
+  background-color: #f3d1b7;
+  border-radius: 3px;
+}
+
+.searchbar-field {
+  width: 100%;
+}
+
+.searchbar-label {
+  display: block;
+  padding-bottom: 0.5rem;
+  color: #333333;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.searchbar-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3rem;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+}
