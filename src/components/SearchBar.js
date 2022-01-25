@@ -7,6 +7,10 @@ class SearchBar extends React.Component {
     event.preventDefault();
   }
 
+  onInputChange = (event) => {
+    this.setState({ term: event.target.value });
+  }
+
   render() {
     console.log(this.state.term);
     return(
@@ -18,7 +22,7 @@ class SearchBar extends React.Component {
               type="text"
               className="searchbar-input" 
               value={this.state.term}
-              onChange={(event) => this.setState({ term: event.target.value })}
+              onChange={this.onInputChange}
             />
           </div>
         </form>
