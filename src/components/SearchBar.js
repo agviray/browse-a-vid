@@ -5,6 +5,8 @@ class SearchBar extends React.Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
+
+    this.props.onFormSubmit(this.state.term);
   }
 
   onInputChange = (event) => {
@@ -12,7 +14,6 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    console.log(this.state.term);
     return(
       <div className="searchbar">
         <form className="searchbar-form" onSubmit={this.onFormSubmit}>
