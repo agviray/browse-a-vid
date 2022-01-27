@@ -21,7 +21,7 @@ class App extends React.Component {
     return(
       <div>
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <VideoList />
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }
