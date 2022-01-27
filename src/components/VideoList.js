@@ -1,8 +1,8 @@
 import React from 'react';
 
-const VideoList = (props) => {
+const VideoList = ({ videos }) => {
   return(
-    <div>You have retrieved {props.videos.length} videos.</div>
+    <div>You have retrieved {videos.length} videos.</div>
   );
 }
 
