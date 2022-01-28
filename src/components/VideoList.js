@@ -7,7 +7,9 @@ const VideoList = ({ videos }) => {
   });
 
   return(
-    <div>You have retrieved {videos.length} videos.</div>
+    <div>
+      {renderedList}
+    </div>
   );
 }
 
