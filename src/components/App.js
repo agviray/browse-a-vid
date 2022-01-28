@@ -5,7 +5,7 @@ import './SearchBar.css';
 import VideoList from './VideoList';
 
 class App extends React.Component {
-  state = { videos: [], onVideoSelect: null };
+  state = { videos: [], selectedVideo: null };
 
   onTermSubmit = async (term) => {
     const response = await youtube.get('/search', {
