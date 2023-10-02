@@ -7,21 +7,21 @@ class SearchBar extends React.Component {
     event.preventDefault();
 
     this.props.onFormSubmit(this.state.term);
-  }
+  };
 
   onInputChange = (event) => {
     this.setState({ term: event.target.value });
-  }
+  };
 
   render() {
-    return(
+    return (
       <div className="searchbar">
         <form className="searchbar-form" onSubmit={this.onFormSubmit}>
           <div className="searchbar-field">
             <label className="searchbar-label">Type something</label>
-            <input 
+            <input
               type="text"
-              className="searchbar-input" 
+              className="searchbar-input"
               value={this.state.term}
               onChange={this.onInputChange}
             />
@@ -30,6 +30,6 @@ class SearchBar extends React.Component {
       </div>
     );
   }
-};
+}
 
 export default SearchBar;
